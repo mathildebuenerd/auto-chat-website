@@ -1,0 +1,81 @@
+/*****
+    Typography
+ *****/
+
+* {
+    font-family: "GT America", "Robot", sans-serif;
+}
+
+
+
+/*****
+    Header
+ *****/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#logo {
+    height: 35px;
+
+}
+
+#logo img {
+    height: 35px;
+}
+
+/*****
+    Menu
+ *****/
+
+#top-nav {
+    height: 30px;
+    padding: 10px;
+}
+
+#apps-button {
+    background-color: blue;;
+    color: white;
+}
+
+#top-nav ul li {
+    list-style-type: none;
+}
+#top-nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-nav ul span::after {
+    content: "\002304";
+}
+
+#top-nav ul li ul li {
+    display: none;
+}
+
+
+/*****
+    Apps list
+ *****/
+
+section#all-apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #eeeeee;
+}
+
+#all-apps article {
+    width: 200px;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+sec
