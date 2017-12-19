@@ -15,7 +15,9 @@
 header {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    /*height: 50px;*/
+    background-color: #eeeeee;
+    padding: 20px;
 }
 
 #logo {
@@ -27,23 +29,59 @@ header {
     height: 35px;
 }
 
+#searchbar input {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
 /*****
     Menu
  *****/
 
 #top-nav {
-    height: 30px;
-    padding: 10px;
+    height: 50px;
 }
 
 #apps-button {
-    background-color: blue;;
+    background-color: blue;
     color: white;
 }
 
 #top-nav ul li {
     list-style-type: none;
+    padding: 10px 25px;
 }
+
+/* drop-down categories menu */
+#menu-categories {
+    overflow: hidden;
+}
+
+#menu-categories ul {
+    position: relative;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: -250px;
+    transition: 0.5s ease;
+}
+
+#menu-categories span {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+}
+
+#menu-categories:hover ul {
+    top:0;
+    transition: 0.5s ease;
+}
+
+#top-nav > ul > li:not(#menu-categories) {
+    height: 30px;
+    overflow: hidden;
+}
+
 #top-nav > ul {
     display: flex;
     justify-content: space-between;
@@ -55,20 +93,22 @@ header {
     content: "\002304";
 }
 
-#top-nav ul li ul li {
-    display: none;
-}
+
 
 
 /*****
     Apps list
  *****/
 
+section#content {
+    background-color: #eeeeee;
+    padding: 30px;
+}
+
 section#all-apps {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #eeeeee;
 }
 
 #all-apps article {
