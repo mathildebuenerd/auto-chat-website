@@ -1,0 +1,29 @@
+{
+  "name": "auto-chat-website",
+  "version": "1.0.0",
+  "description": "Website for auto-chat, a fictive messaging app with disturbing features",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathildebuenerd/auto-chat-website.git"
+  },
+  "keywords": [
+    "instant",
+    "messaging",
+    "chat",
+    "autocomplete",
+    "store"
+  ],
+  "author": "mathilde buenerd - HEAD Genève",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mathildebuenerd/auto-chat-website/issues"
+  },
+  "homepage": "https://github.com/mathildebuenerd/auto-chat-website#readme",
+  "dependencies": {
+    "normalize-css": "^2.3.1"
+  }
+}
