@@ -23,14 +23,17 @@ p {
 }
 
 h1 {
-    color: white;
+    color: blue;
     font-weight: 200;
-    text-align: center;
-    font-size: 8em;
+    /*text-align: center;*/
+    font-size: 5em;
+    margin-top: 200px;
+    /*font-weight: 800;*/
 }
 
 #slogan {
     font-size: 0.5em;
+    color: grey;
 }
 
 h2, h3 {
@@ -43,10 +46,9 @@ h2, h3 {
 
 header {
     width: 100vw;
-    height: 800px;
+    height: 100vh;
     padding: 200px;
-    background-image: url(images/mathyas-kurmann-102977.jpg);
-    /*background-color: azure;*/
+    background-image: url(images/header.jpg);
     background-size: cover;
 }
 
@@ -84,7 +86,7 @@ header nav ul li a, header nav ul li a:visited {
 header nav button {
     position: absolute;
     right: 0;
-    background-color: #0099FF;
+    background-color: blue;
     text-transform: uppercase;
     height: 100%;
     color: white;
@@ -102,27 +104,33 @@ header nav button a {
 
 /* GENERAL */
 
-section, footer {
+#core-features section, footer {
     padding: 100px 200px;
     display: flex;
     align-items: center;
 }
 
-section:nth-child(odd) { /*one in two sections have a bit darker background*/
+#core-features section:nth-child(odd) { /*one in two sections have a bit darker background*/
     background-color: #fbfbfb;
 }
 
-section:nth-child(odd) img, section:nth-child(odd) video {
+#core-features section:nth-child(odd) img, section:nth-child(odd) video {
     margin-left: 30px;
 }
 
-section:not(#join) video, section img {
+#core-features section video, section img {
     /*width: 1000px;*/
     height: 500px;
 }
 
-section:not(#join) div {
+#core-features section div {
     width: 500px;
+}
+
+#core-features > h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
 }
 
 /* JOIN IN SECTION */
@@ -172,4 +180,44 @@ footer a {
 
 footer p {
     font-size: 0.8em;
+}
+
+
+
+/******
+
+    Plugins
+
+ ******/
+
+#plugins {
+    background-color: #f6f6f6;
+    padding: 100px;
+}
+
+#plugins #all-apps {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+#plugins #all-apps article {
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-grow: 0; /*grossissement max:0*/
+    flex-shrink: 0; /*retrécissement max:0*/
+}
+
+#plugins #all-apps article img {
+    height: 200px;
+}
+
+#plugins #all-apps::-webkit-scrollbar {
+    height: 2px;
+    background-color: grey;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
