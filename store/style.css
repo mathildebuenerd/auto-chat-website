@@ -84,9 +84,13 @@ header {
 
 #top-nav > ul {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin: 0;
     padding: 0;
+}
+
+#top-nav #menu-categories {
+    /*width: 120px;*/
 }
 
 #top-nav ul span::after {

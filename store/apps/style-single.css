@@ -1,0 +1,245 @@
+section#content {
+    display: flex;
+}
+
+/******
+
+    Description of the app
+
+******/
+
+#description-app {
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 900px;
+    padding: 30px;
+}
+
+#main-image {
+    position: relative;
+    margin: -30px 20px 0 -30px;
+    width: 250px;
+    height: auto;
+    /*margin-right: 20px;*/
+}
+
+#description-app #screenshots img {
+    width: 280px;
+    height: auto;
+}
+
+#intro-app {
+    margin-bottom: 20px;
+}
+
+
+#intro-app, #intro-app #details, #intro-app #opinion {
+    display: flex;
+}
+
+#intro-app #details {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#intro-app h2 {
+    font-weight: 200;
+    font-size: 2em;
+    margin-bottom: 15px;
+    width: 600px; /* because of a problem to put the stars on the right of the block */
+}
+
+#keywords {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    font-weight: 500;
+    color: grey;
+}
+
+#intro-app #keywords li {
+    margin-right: 20px;
+}
+
+#pegi {
+    margin: 5px 0;
+}
+
+#opinion p {
+    margin: 0;
+}
+
+#opinion .details {
+    padding: 40px;
+}
+
+
+button#install {
+    background-color: blue;
+    padding: 15px;
+    color: white;
+    border:none;
+    float: right;
+}
+
+
+#description-app #screenshots {
+    overflow-x: scroll;
+    width: 90%;
+}
+
+#description-app #long-description {
+    width: 90%;
+    margin: 40px auto;
+}
+
+#detailed-opinion .details > div {
+    display: flex;
+}
+
+#detailed-opinion #marks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#detailed-opinion #global-mark {
+    font-size: 5em;
+    font-weight: 100;
+    margin: 0;
+}
+
+#detailed-opinion #chart ul {
+    list-style-type: none;
+}
+
+#detailed-opinion #chart ul li {
+    display: flex;
+}
+
+#detailed-opinion #chart ul li span::after {
+    content: attr(data-number);
+}
+
+#detailed-opinion #chart ul li div {
+    height: 20px;
+    margin-left: 10px;
+}
+
+#detailed-opinion #chart ul li div::before {
+    content: attr(data-number);
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+#detailed-opinion #chart ul li:nth-child(1) div {
+    background-color: #88b131;
+    width: 500px;
+}
+
+#detailed-opinion #chart ul li:nth-child(2) div {
+    background-color: #99cc00;
+    width: 100px;
+}
+
+#detailed-opinion #chart ul li:nth-child(3) div {
+    background-color: #ffcf02;
+    width: 15px;
+}
+
+#detailed-opinion #chart ul li:nth-child(4) div {
+    background-color: #ff9f02;
+    width: 35px;
+}
+
+#detailed-opinion #chart ul li:nth-child(5) div {
+    background-color: #ff6f31;
+    width: 45px;
+}
+
+#written-opinions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#written-opinions article {
+    width: 45%;
+    display: flex;
+}
+
+#written-opinions .username_stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+#written-opinions .username {
+    margin: 0;
+}
+
+#written-opinions .picture-profile img {
+    width: 70px;
+    height: auto;
+    margin: 20px 20px 0 0;
+}
+
+#written-opinions .comment {
+    font-size: 0.8em;
+}
+
+
+
+
+
+/******
+
+    Recommandations
+
+******/
+
+#recommendations article a {
+    display: flex;
+}
+
+#recommendations article {
+    width: 280px;
+    background-color: white;
+    padding: 15px;
+    margin: 15px 40px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-grow: 0; /*grossissement max:0*/
+    flex-shrink: 0; /*retrécissement max:0*/
+}
+
+#recommendations article img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#recommendations h2 {
+    font-weight: normal;
+}
+
+
+#recommendations h3 {
+    font-size: 1em;
+}
+
+#recommendations h4 {
+    font-size: 0.8em;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+#recommendations a {
+    text-decoration: none;
+    color: black;
+}
+
+#recommendations a h3:hover {
+    text-decoration: underline;
+}
