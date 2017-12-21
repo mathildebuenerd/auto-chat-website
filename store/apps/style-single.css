@@ -20,7 +20,7 @@ section#content {
     position: relative;
     margin: -30px 20px 0 -30px;
     width: 250px;
-    height: auto;
+    height: 250px;
     /*margin-right: 20px;*/
 }
 
@@ -86,7 +86,7 @@ button#install {
 
 
 #description-app #screenshots {
-    overflow-x: scroll;
+    /*overflow-x: scroll;*/
     width: 90%;
 }
 
@@ -215,8 +215,8 @@ button#install {
 }
 
 #recommendations article img {
-    width: 100%;
-    height: auto;
+    width: 180px;
+    height: 180px;
     margin-right: 20px;
 }
 
